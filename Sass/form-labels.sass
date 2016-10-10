@@ -1,0 +1,62 @@
+$bg : #21a1e1
+body
+	padding: 100px
+
+input
+	background: none
+	border: solid 2px $bg
+	color: $bg
+	padding: 25px 40px
+	font:
+		family:"Adobe Clean"
+		size: 18px 
+	display:inline-block
+
+	&:focus,
+	&:active
+		outline: none
+
+	&[type="text"],
+	&[type="email"]
+		border:none
+		border-bottom: solid 2px $bg
+
+	&[type="submit"]
+		cursor:pointer
+	 &:active
+	  color:#fff
+	  background: $bg
+
+.input-group
+	display:inline-block
+	margin-left:20px
+	position: relative
+
+	input 
+	 padding: 15px 0px
+
+ label
+ 	position: absolute
+ 	top: 50%
+ 	left: 0px
+ 	-webkit-transform: translateY(-50%)
+ 	transform: translateY(-50%)
+ 	font:
+ 		family:"Adobe Clean"
+ 		size:18px
+ 	color:#999
+ 	pointer-events:none
+ 	transition: all 0.15s ease-out 0s
+
+ input:focus + label,
+ input.has-val + label
+ 		top:-10px
+ 		font-size:12px
+ 		color:#aaa
+
+
+
+
+
+	
+

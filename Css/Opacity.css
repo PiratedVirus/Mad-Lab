@@ -1,0 +1,77 @@
+body {
+  font-family: Adobe Clean;
+  text-align: center;
+  background-image: url(img/contact-bg.jpg);
+  background-attachment: fixed;
+}
+
+div {
+  width: 800px;
+  height: 150px;
+  color: white;
+  background-color: black;
+  opacity: 0.2;
+  border: 2px solid #060606;
+  margin: 0px auto;
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+div:hover {
+  opacity: 0.6;
+  text-shadow: 0 0 15px #FFFFFF;
+  ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+fieldset {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 250px;
+  margin: 0px 0px 5em 0px;
+  display: inline-block;
+}
+
+button {
+  background: Transperent;
+}
+
+input {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  /*height: 25px;*/
+  border-radius: 0;
+  box-shadow: none;
+  width: 50em;
+  padding: 15px;
+  margin: 10px;
+  line-height: 1.42857143;
+  color: white;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  font-family: Adobe Clean;
+  font-size: 20px;
+}
+
+input[type="button"] {
+  background-color: #028FCC;
+  width: 555px;
+  height: 48px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+legend {
+  color: #FCFCFC;
+  font-weight: bolder;
+}
+
+#name {
+  margin: 7em 0px 0px 0px;
+}

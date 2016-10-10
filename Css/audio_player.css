@@ -1,0 +1,58 @@
+@import url(../markups/font/css/font-awesome.min.css);
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.player-wrap {
+  background: #d73737;
+  padding: 2em;
+}
+
+.player-wrap .player-control {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.player-wrap .player-control > div {
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.player-wrap .player-control > div:hover {
+  animation: bounce 0.4s linear;
+  color: #21a1e1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  95% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.details-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: -100px;
+}
+
+.details-wrap h2 {
+  color: rgba(153, 153, 153, 0.7);
+  cursor: pointer;
+}
+
+.details-wrap h2:hover, .details-wrap h2:active, .details-wrap h2:focus {
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,26 @@
+doctype html
+head
+	title Music Player
+	link(rel="stylesheet" href="../Css/music_player.css")
+body
+	article.player
+		h1 Animated Music Player
+		h2 Music Composed with Figure
+		
+		.spinner-wrap
+			.spinner-outer
+			.spinner-inner
+			.play-sprite
+
+		audio.curr(loop='loop' data-bpm='86')
+			source(src='songs/jamsauce.mp3' type='audio/mp3')
+		audio(loop='loop' data-bpm='86')
+			source(src='songs/Hall of fame.mp3' type='audio/mp3')
+		audio(loop='loop' data-bpm='86')
+			source(src='songs/Burn.mp3' type='audio/mp3')
+
+		input.nxt(type="button", value="Next")
+
+
+	script(src="../Scripts/jquery-2.1.3.min.js")
+	script(src="../Scripts/music_player.js")

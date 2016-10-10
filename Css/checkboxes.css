@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url(../markups/font/css/font-awesome.min.css);
+body {
+  padding: 50px;
+}
+
+label {
+  cursor: pointer;
+  color: #666;
+}
+
+label input[type="checkbox"] {
+  display: none;
+}
+
+label input[type="checkbox"] + .label-text:before {
+  content: "";
+  speak: none;
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-varient: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  text-transform: none;
+  line-height: 1;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+label input[type="checkbox"]:checked + .label-text:before {
+  content: "";
+  color: #06a3e9;
+  animation: tick 180ms ease-in;
+}
+
+label input[type="checkbox"]:disabled + .label-text {
+  color: #aaa;
+  cursor: context-menu;
+}
+
+label input[type="checkbox"]:disabled + .label-text:before {
+  content: "";
+  color: #ccc;
+}
+
+@keyframes tick {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
